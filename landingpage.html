@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Final Web app development</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Heothi Life</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="loginpage.php">Sign in</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="https://www.gmail.com">Contact</a></li>
+            </ul>
+        </header>
+        <section id="section">
+            <img src="Cloud.png" id="cloud">
+            <img src="Back.png" id="back">
+            <h2 id="text">HELLO!</h2>
+            <a href="#sec1" id="btn">Explore</a>
+            <img src="front.png" id="front">
+        </section>
+        <div class="sec1" id="sec1">
+            <div class="row">
+                <div class="col 1">
+                    <div class="leftside">
+                        <h1>Giới thiệu về Heothi Life</h1><br>
+                        <p>Moodle is a platform designed to provide physicians and administrators with a single powerful, secure and integrated system for creating a personalized management environment.</p><br>
+                        <p>Moodle was built by our team's final project, and will continue to develop in the future </p>
+                    </div>                   
+                </div>
+                <div class="col 2">
+                    <div class="rightside">
+                        <img src="doctor.png">
+                    </div>                   
+                </div>
+            </div>
+        </div>  
+        <footer>
+            
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="mail-open-outline"></ion-icon></a></li>
+
+            </ul>
+            <ul class="menu">
+                <li><a href="#section">Home</a></li>
+                <li><a href="loginpage.php">Sign in</a></li>
+                <li><a href="About us.html">About</a></li>
+                <li><a href="https://www.gmail.com">Contact</a></li>
+            </ul>
+            <hr>
+            <p>@2021 Group Project | All Rights Reserved</p>
+        </footer><script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let Cloud = document.getElementById('cloud');
+            let Back = document.getElementById('back');
+            let Text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let Front = document.getElementById('front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                Cloud.style.top = value*1.25 + 'px';
+                Back.style.top = value*0.5 + 'px';
+                Text.style.marginRight = value*2 + 'px';
+                btn.style.marginTop = value *1.5 + 'px';
+                header.style.marginTop = value *0.75 + 'px';
+            }
+            )
+        </script>
+    </body>
+</html>
